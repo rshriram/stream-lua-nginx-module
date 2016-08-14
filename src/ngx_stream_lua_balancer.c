@@ -487,7 +487,7 @@ ngx_stream_lua_ffi_balancer_set_current_peer(ngx_stream_session_t *s,
     return NGX_OK;
 }
 
-
+#if 0
 int
 ngx_stream_lua_ffi_balancer_set_timeouts(ngx_stream_session_t *s,
     long connect_timeout, long send_timeout, long read_timeout,
@@ -581,7 +581,7 @@ ngx_stream_lua_ffi_balancer_set_timeouts(ngx_stream_session_t *s,
 
     return NGX_OK;
 }
-
+#endif
 
 int
 ngx_stream_lua_ffi_balancer_set_more_tries(ngx_stream_session_t *s,
